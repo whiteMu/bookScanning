@@ -1,0 +1,43 @@
+<ion-view hide-nav-bar="true" class="book-details">
+	<ion-header-bar class="book-detail-header">
+		<a class="button-back" ng-click="goback()">
+			&lt; 返回
+		</a>
+		<h2>图书详情</h2>
+	</ion-header-bar>
+
+	<ion-content>
+		<div class="bookMsg">
+			<dl class="clearfix">
+				<dt>
+						<img src="{{bookData.images.medium}}">
+					</dt>
+				<dd>
+					<ul>
+					<li ng-bind="bookData.title"></li>
+					<li>
+						<p ng-repeat="item in bookData.author">
+							<span>{{item}} </span>
+						</p>
+					</li>
+					<li ng-bind="bookData.publisher"></li>
+					<li>定价:{{bookData.price}}</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div class="about-warp">
+			<div class="about">
+				<h4>简介</h4>
+				<p ng-bind="bookData.summary"></p>
+			</div>
+		</div>
+	</ion-content>
+	
+	<ion-footer-bar class="book-detail-footer">
+		<footer>
+			<span class="add-bookshelf">加入书架</span>
+			<span class="add-collection">加入收藏</span>
+		</footer>
+	</ion-footer-bar>
+</ion-view>

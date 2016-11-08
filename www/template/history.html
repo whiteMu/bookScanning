@@ -1,0 +1,26 @@
+<ion-view hide-nav-bar="true" class="history">
+	<ion-header-bar class="history-header">
+		<a class="button-back" ng-click="goback()">
+			&lt; 返回
+		</a>
+		<h2>扫描历史</h2>
+	</ion-header-bar>
+
+	<ion-content>
+		<div class="content">
+			<ion-list class="list">
+				<ion-item ng-repeat="(key,value) in historyStorage" class="item" ng-click="getBookMsg(value)">
+					<ul class="clearfix">
+						<li><img src="{{value.img}}"></li>
+						<li>
+							<h3 ng-bind="value.title"></h3>
+							<span ng-bind="value.imgData"></span>
+						</li>
+						<li class="time" ng-bind="value.time"></li>
+					</ul>
+				</ion-item>
+			</ion-list>
+		</div>
+
+	</ion-content>
+</ion-view>

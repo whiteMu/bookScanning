@@ -1,0 +1,94 @@
+.book-details{
+	background:#F2F1F7;
+	font-size:15px;
+}
+.book-details .book-detail-header{
+	background:#F6F6F8;
+	border-bottom:1px solid #B2B2B2;
+	position:relative;
+}
+.book-details .book-detail-header h2{
+	width:100%;
+	font-size:20px;
+	line-height:34px;
+	font-weight:900;
+	text-align: center;
+}
+.book-details .book-detail-header .button-back{
+	color:#03B70B;
+	position:absolute;
+	top:14px;
+	left:16px;
+	font-size:18px;
+	font-weight:900;
+}
+.book-details .bookMsg{
+	height:180px;
+	background:white;
+	padding:10px;
+}
+.book-details .bookMsg dt{
+	margin-right:10px;
+	height:160px;
+	float:left;
+}
+.book-details .bookMsg dd{
+	height:160px;
+	float:left;
+}
+.book-details .bookMsg dd ul{
+	display:box;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	height:160px;
+}
+.book-details .bookMsg dd ul li{
+	box-flex:1;
+	-webkit-box-flex:1;
+}
+.book-details .about-warp{
+	
+	padding:10px;
+	padding-top:0px;
+	padding-bottom:44px;
+}
+.book-details .about h4{
+	color:#AAAAAA;
+	margin-top:6px;
+	margin-bottom:10px;
+	font-size:15px;
+	font-weight:900;
+}
+.book-details .about{
+	border-top:1px solid #9F9F9F;
+}
+.book-details .book-detail-footer{
+	background:#F2F1F7;
+	border-top:0px;
+}
+.book-details footer{
+	width:100%;
+	display:box;
+	display: -webkit-box;
+}
+.book-details footer .add-bookshelf{
+	display:block;
+	box-flex:1;
+	-webkit-box-flex:1;
+	margin-right:5px;
+	border-radius:4px;
+	color:white;
+	background:#00AD5C;
+	text-align:center;
+	line-height:34px;
+}
+.book-details footer .add-collection{
+	display:block;
+	box-flex:1;
+	-webkit-box-flex:1;
+	border-radius:4px;
+	color:white;
+	background:#2185C5;
+	text-align:center;
+	line-height:34px;
+}
